@@ -157,8 +157,3 @@ python <filename>.py
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-```
-
-This `README.md` explains the project, how to use the code, the code structure, and gives installation instructions. It also includes information about the limitations and possible future improvements.
-```
