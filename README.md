@@ -2,6 +2,10 @@
 
 This project provides a heuristic solution for a 2D cutting stock problem. Given a list of required pieces (with dimensions and quantities) and a list of available board types (with dimensions and cost), the program finds a combination of boards that minimizes the total cost while being able to cut all required pieces. The solution uses a free-rectangle splitting algorithm for panel packing, a greedy heuristic based on cost per unit area of packed pieces, and produces both a shopping list of boards and visualizations of the board layouts.
 
+# An NP-Hard problem
+
+The board cutting problem, specifically when aiming to minimize the total cost of purchasing boards while ensuring all required pieces are cut, is NP-hard because it involves combinatorially selecting and packing pieces onto available boards in a way that optimizes the cost, subject to the constraints of the board dimensions. This problem shares characteristics with the bin packing problem, which is known to be NP-hard. In bin packing, the objective is to minimize the number of bins (or boards, in this case) required to pack a set of items (or pieces), and this becomes computationally difficult as the number of items and bins increases. The added complexity of minimizing the total cost, considering different board sizes and costs, further increases the difficulty. Since no known algorithm can solve NP-hard problems in polynomial time, finding the optimal solution for large input sizes becomes infeasible, and heuristics or approximation algorithms are used instead to find good-enough solutions within a reasonable time frame.
+
 ## Output
 
 The program generates visualizations of the board layouts, showing how the pieces are arranged on each board. Below is an example of the output image:
