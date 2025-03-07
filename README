@@ -6,7 +6,7 @@ This project provides a heuristic solution for a 2D cutting stock problem. Given
 
 The program generates visualizations of the board layouts, showing how the pieces are arranged on each board. Below is an example of the output image:
 
-![Board Layout Example](output.png)
+![Board Layout Example](https://github.com/SPTS7/wood_cutter/blob/main/output.png)
 
 ## Features
 
