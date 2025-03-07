@@ -1,0 +1,32 @@
+# Board Cutting Optimization and Purchasing
+
+This project provides a heuristic solution for a 2D cutting stock problem. Given a list of required pieces (with dimensions and quantities) and a list of available board types (with dimensions and cost), the program finds a combination of boards that minimizes the total cost while being able to cut all required pieces. The solution uses a free-rectangle splitting algorithm for panel packing, a greedy heuristic based on cost per packed area, and produces both a shopping list of boards and visualizations of the board layouts.
+
+## Output
+
+The program generates visualizations of the board layouts, showing how the pieces are arranged on each board. Below is an example of the output image:
+
+![Board Layout Example](output/board_layout_example.png)
+
+## Features
+
+- **Panel Packing:** Uses a free-rectangle splitting algorithm to efficiently pack rectangular pieces onto a board.
+- **Cost Optimization:** Chooses board types based on a heuristic metric (cost per unit area packed) to minimize overall cost.
+- **Shopping List Generation:** Prints a shopping list of boards needed, showing quantities, board dimensions, and cost per board.
+- **Visualization:** Displays each board (with full dimensions) and the placed pieces, including board size and cost in the title.
+
+## Requirements
+
+- Python 3.x
+- [NumPy](https://numpy.org/)
+- [Matplotlib](https://matplotlib.org/)
+- [tqdm](https://github.com/tqdm/tqdm)
+
+## Installation
+
+1. **Clone the Repository** (or download the code file):
+
+   ```bash
+   git clone <repository-url>
+   cd <repository-directory>
+   ```
